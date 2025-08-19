@@ -1,0 +1,39 @@
+cps_default: 14
+reach: 4.0
+idle_stop_seconds: 3.0
+require_look_at_target: true
+look_dot_min: 0.6
+only_monsters: false # soon
+start_on_first_hit: true
+
+# Mode de ciblage :
+# - single : attaque uniquement le mob le plus proche
+# - switch : attaque le mob le plus proche et garde la même cible jusqu'à sa mort
+# - aura   : attaque tous les mobs dans la zone
+mode: "single"
+
+messages:
+  enabled: "§aAutoClick activé"
+  disabled: "§cAutoClick désactivé"
+  started: "§aAutoClick démarré"
+  stopped_idle: "§cAutoClick désactivé (inactif)"
+  no_permission: "§cVous n'avez pas la permission"
+  toggled_on: "§aAutoClick prêt, tapez un mob pour démarrer"
+  toggled_off: "§cAutoClick désactivé"
+
+permission_levels:
+  autoclicklevel1.use: 10
+  autoclicklevel2.use: 15
+  autoclicklevel3.use: 20
+
+permission_defaults:
+  autoclick.use: op
+  autoclicklevel1.use: op
+  autoclicklevel2.use: op
+  autoclicklevel3.use: op
+
+command:
+  name: autoclick
+  description: Toggle autoclick
+  usage: /autoclick
+  permission: autoclick.use

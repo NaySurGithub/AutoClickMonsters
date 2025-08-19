@@ -1,0 +1,5 @@
+name: AutoClickMonsters
+version: FREE
+main: AutoClickMonsters\Main
+api: 5.0.0
+src-namespace-prefix: AutoClickMonsters
