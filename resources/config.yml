@@ -8,7 +8,6 @@ start_on_first_hit: true
 
 # Mode de ciblage :
 # - single : attaque uniquement le mob le plus proche
-# - switch : attaque le mob le plus proche et garde la même cible jusqu'à sa mort
 # - aura   : attaque tous les mobs dans la zone
 mode: "single"
 
